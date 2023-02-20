@@ -18,10 +18,6 @@
         buyController.isEverythingBought = function (){
             return buyController.items.length === 0;
         }
-
-        buyController.sout = function (){
-            console.log(buyController.items)
-        }
     }
 
     ShoppingListShowController.$inject = ['ShoppingListService'];
@@ -35,10 +31,6 @@
 
         showController.isAnythingBought = function (){
             return showController.items.length > 0;
-        }
-
-        showController.sout = function (){
-            console.log(showController.items)
         }
     }
 
