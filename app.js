@@ -46,7 +46,8 @@
         }
 
         service.buyItem = function (index){
-            var buyItem = shoppingList.pop(index);
+            var buyItem = shoppingList[index];
+            shoppingList.splice(index, 1);
             boughtItems.push(buyItem);
         }
 
